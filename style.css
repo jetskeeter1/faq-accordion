@@ -1,0 +1,86 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --White: hsl(0, 0%, 100%);
+    --Light-pink: hsl(275, 100%, 97%);
+    --Grayish-purple: hsl(292, 16%, 49%);
+    --Dark-purple: hsl(292, 42%, 14%);
+}
+
+@font-face {
+    font-family: workB;
+    src: url(assets/fonts/static/WorkSans-Bold.ttf);
+}
+
+@font-face {
+    font-family: workR;
+    src: url(assets/fonts/static/WorkSans-Regular.ttf);
+}
+
+@font-face {
+    font-family: workSB;
+    src: url(assets/fonts/static/WorkSans-SemiBold.ttf);
+}
+
+body{
+    background-image: url(assets/images/background-pattern-desktop.svg);
+    background-repeat: no-repeat;
+    background-color: var(--Light-pink);
+}
+
+h1{
+    font-family: workB;
+}
+
+main{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.faq-container{
+    width: 42em;
+    background-color: var(--White);
+    padding: 30px;
+    border-radius: 20px;
+}
+
+.item-container-1, .item-container-2, .item-container-3{
+    border-bottom: 1px solid rgb(236, 236, 236);
+}
+
+.item-container-1, .item-container-2, .item-container-3, .item-container-4{
+    padding: 20px;
+}
+
+.title{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: workB;
+    margin-bottom: 10px;
+}
+
+
+.drop-item{
+    font-family: workR;
+    overflow: hidden;
+    height: 0;
+}
+
+.item-container-2:hover .drop-item{
+    height: 100px;
+}
+
+.title{
+    height: fit-content;
+}
+
+.open{
+    height: fit-content;
+}
