@@ -66,6 +66,13 @@ main{
     margin-bottom: 10px;
 }
 
+.title:hover{
+    cursor: pointer;
+}
+
+#drop-item-1{
+    transition: 1s;
+}
 
 .drop-item{
     font-family: workR;
