@@ -38,14 +38,14 @@ h1{
 
 main{
     height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
 .faq-container{
     width: 42em;
     background-color: var(--White);
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10%;
     padding: 30px;
     border-radius: 20px;
 }
@@ -71,10 +71,7 @@ main{
     font-family: workR;
     overflow: hidden;
     height: 0;
-}
-
-.item-container-2:hover .drop-item{
-    height: 100px;
+    transition: 1s;
 }
 
 .title{
@@ -83,4 +80,5 @@ main{
 
 .open{
     height: fit-content;
+    transition: 1s;
 }
